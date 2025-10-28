@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // Criei um vetor
+        l = new Array(6);
+        //entrando com dados no valor
+        l [0] = 20;
+        l [1] = 40;
+        l [2] = 15;
+        l [3] = 12;
+        l [4] = 97;
+        l [5] = 75;
+
+        // imprimir os valores de array
+
+        for (let i = 0; i < 6; i++) {
+            document.writeln("Indice " + i + "=" + l[i] + "<br>");
+            
+        }
+        // Ordenando lista
+        document.writeln("--------ORDENAÇÃO--------" + "<br>");
+        // sort ordena a lista
+        num = l.sort();
+        for (let i = 0; i < 6; i++) {
+            document.writeln("Indice " + i + num[i] + "<br>");
+            
+        }
+
+    </script>
+</body>
+</html>

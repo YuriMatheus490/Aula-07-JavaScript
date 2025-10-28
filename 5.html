@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 4</title>
+</head>
+<body>
+    <script>
+        let quantidade = parseInt(prompt("Digite a quantidade de nomes "));
+
+        let nomes = [];
+
+        for (let i = 0; i < quantidade; i++) {
+            let nome = prompt("Digite o " + (i + 1) + "º nome");
+            nomes.push(nome);
+            
+        }
+        // imprimeir o vetor
+        for (let i = 0; i < quantidade; i++) {
+            document.writeln((i + 1) + "º Nome " + nomes[i] + "<br/>")
+           
+        }
+
+    </script>
+</body>
+</html>

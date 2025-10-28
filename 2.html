@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Contador</title>
+</head>
+<body>
+    <script>
+        // Declaração de variáveis e inicializando ao mesmo tempo.
+        var contador = 0;
+
+        aluno = new Array();
+        nota1 = new Array();
+        nota2 = new Array();
+        media = new Array();
+        situacao = new Array();
+
+        var quantidade = parseInt(prompt("Quantos alunos serão cadastrados"));
+
+        while (contador < quantidade) {
+            aluno[contador] = prompt("Entre com o nome do aluno " + (contador+1));
+            nota1[contador] = prompt("Nota 1 do " +(contador+1) + " do  deve ser entre 0 e 10");
+            nota2[contador] = prompt("Nota 2 do " +(contador+1) + " do  deve ser entre 0 e 10");
+            media[contador] = (parseFloat(nota1[contador]) + parseFloat(nota2[contador]))/2;
+            if(media[contador] >=7 ){
+                situacao[contador] = "Aprovado";
+            } else if(media[contador] >= 5){
+                situacao[contador] = "Recuperação";
+            } else{
+                situacao[contador] = "Reprovado";
+            }
+            contador++;
+            
+        }
+
+        for (let i = 0; i < contador; i++) {
+           document.writeln("Nome :" + aluno[i] + "<br>"); 
+           document.writeln("Média :" + media[i] + "<br>"); 
+           document.writeln("Situação :" + situacao[i] + "<br>"); 
+            
+        }
+    </script>
+</body>
+</html>
